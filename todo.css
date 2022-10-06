@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;800&display=swap');
+
+
 h1{
     text-align: center;
     font-family: 'Poppins';
     font-size: 800;
-    color: #A18276;
+    color: #A18266;
 }
-
 .folder{
     border-style: solid;
     height: 550px;
@@ -16,16 +17,18 @@ h1{
     background-color: #D9D9D9;
     border-radius: 2%;
     position: relative;
+    cursor: initial;
 }
 
 h3{
     color: black;
 }
-img{
+img[alt~="add"]{
     width: 5%;
     height: 5%;
     margin-left: 52%;
     margin-top: -0.1%;
+    cursor: pointer;
 }
 
 .file1, .file2, .file3, img{
@@ -42,46 +45,133 @@ img{
 .file1{
     position: absolute;
     top: -2px;
-    left: -2.5px;
+    left: -2px;
     background-color: #D9D9D9;
-    width: 18%;
-    height: 20%;
+    width: 20%;
+    height: 11%;
     text-align: center;
     border-radius: 5%;
     z-index: 3;
+    cursor: pointer;
 }
 .today{
-    color: #A18276;
+    color: #A18266;
 }
 .file2{
-    background-color: #A18276;
+    background-color: #A18266;
     position: absolute;
     z-index: 2;
-    margin-left: 13%;
-    width: 18%;
+    margin-left: 3%;
+    width: 24%;
     height: 8%;
     text-align: center;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
     margin-top: -2px;
+    cursor: pointer;
 }
 .tomorrow{  
     color: #F5F5F5;
     margin-top: 5%;
+    text-align: center;
 }
 .file3{
     background-color: #2D2623;
     position: absolute;
     z-index: 1;
-    margin-left: 30%;
-    width: 18%;
+    margin-left: 20%;
+    width: 27%;
     height: 8%;
     text-align: center;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
     margin-top: -2px;
+    cursor: pointer;
 }
 .monday{
     color: #F5F5F5;
     margin-top: 5%;
+}
+
+.circles{
+    list-style: none;
+    display: block;
+}
+
+.check{
+    width: 4%;
+    height: 4%;
+    margin-left: -8%;
+    cursor: pointer;
+}
+
+img[alt~="undone"]{
+    width: 4%;
+    height: 4%;
+    cursor: pointer;
+}
+.add2{
+    width: 4%;
+    height: 4%;
+    cursor: pointer;
+}
+
+img,h4,.trash{
+    display: inline-flex;
+}
+h4{
+    color: black;
+    z-index: 3;
+    font-family: 'Poppins';
+    font-weight: 500;
+    margin-left: 8%;
+    font-size: 120%;
+}
+
+.trash{
+    width: 4%;
+    height: 4%;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+img, input, .trash{
+    display: inline-flex;
+    border: none;
+}
+
+input{
+    background-color: #c9c3c3;
+    font-size: 170%;
+}
+
+.todo-container{
+    list-style: none;
+    display: block;
+    margin-top: 5%;
+}
+
+.todo-input{
+    display: inline-flex;
+}
+.todo-item{
+    color: black;
+    z-index: 3;
+    font-family: 'Poppins';
+    font-weight: 500;
+    margin-left: 3%;
+    font-size: 140%;
+    list-style: none;
+}
+.todo-list{
+    list-style: none;
+}
+
+.todo-item, img{
+    display: inline;
+    
+}
+
+.add2, .todo-input{
+    margin-top: 3%;
 }
